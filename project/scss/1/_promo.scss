@@ -1,0 +1,37 @@
+.promo {
+  flex: 0 0 735px;
+  display: flex;
+  flex-direction: column;
+  padding: 21px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
+  &__box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000842;
+    border-radius: 15px;
+  }
+  &__image {
+    width: 100%;
+    max-width: 559px;
+    height: auto;
+    margin-bottom: 90px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+  &__subtitle {
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}

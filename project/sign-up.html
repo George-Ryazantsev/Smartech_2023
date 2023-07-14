@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sign up</title>
+    <div id="secretContent"></div>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <section class="form">
+        <a href="#" class="form__logo logo">Your Logo</a>
+        <div class="form__content">
+          <h1 class="form__title">Sign up</h1>
+          <p class="form__subtitle">If you already have an account register</p>
+          <p class="form__subtitle">
+            You can
+            <a href="./authorization.html" class="form__link"> Login here !</a>
+          </p>
+          <form action="#" class="form__form-box form-box">
+            <div class="form-box__input-box input-box">
+              <label class="input-box__info" for="email">Email</label>
+              <label class="input-box__icon" for="email"
+                ><img src="./image/email.svg" alt="email"
+              /></label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <div class="form-box__input-box input-box">
+              <label class="input-box__info" for="user">User name</label>
+              <label class="input-box__icon" for="user"
+                ><img src="./image/user.svg" alt="User name"
+              /></label>
+              <input
+                type="text"
+                name="user"
+                id="user"
+                placeholder="Enter your user name"
+              />
+            </div>
+            <div class="form-box__input-box input-box">
+              <label class="input-box__info" for="password">Password</label>
+              <label class="input-box__icon" for="password"
+                ><img src="./image/password.svg" alt="password"
+              /></label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+              />
+            </div>
+
+            <div class="form-box__input-box input-box">
+              <label class="input-box__info" for="confrim-password"
+                >Confrim password</label
+              >
+              <label class="input-box__icon" for="confrim-password"
+                ><img src="./image/password.svg" alt="confrim password"
+              /></label>
+              <input
+                type="password"
+                name="confrim-password"
+                id="confrim-password"
+                placeholder="Confrim your password"
+              />
+            </div>
+            <div class="form-box__btn-box btn-box">
+              <button type="submit" id="signUpButton" onclick="alerted();">
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="promo__box">
+          <div class="promo__content">
+            <img src="./image/Saly.png" alt="Saly" class="promo__image" />
+            <h1 class="promo__title">Sign up to name</h1>
+            <p class="promo__subtitle">Lorem Ipsum is simply</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/sign-up.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.promo {
+  flex: 0 0 735px; /* ширина 735*/
+  display: flex;
+  flex-direction: column;
+  padding: 21px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
+  &__box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    width: 100%;
+    max-width: 1035px;
+    height: auto;
+    margin-bottom: 90px;
+    width: 115px;
+    flex-shrink: 0;
+  }
+  &__bottom {
+    position: absolute;
+    bottom: 80px;
+    left: 16px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+  &__subtitle {
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}
